@@ -3,65 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmless Hedonist</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>The Harmless Hedonist</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/f6a84e3173.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <nav class="header">
-        <h1>Header Logo</h1>
-        <ul class="headerlinks">
-            <li>header link one</li>
-            <li>header link two</li>
-            <li>header link three</li>
-        </ul>
-    </nav>
-    <div class="content">
-        <div class="contentleft">
-        <h2>This website is awesome</h2>
-            <p class="contenttext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita consequatur ipsa! Beatae delectus non earum ipsa nam natus quisquam, quos ullam culpa itaque assumenda, aliquid corporis, voluptatem animi suscipit!</p>
-            <button class="contentbutton">Sign up</button>
-        </div>
-        <div class="contentright">
-            <img class="contentimg" src="https://archive.org/download/placeholder-image/placeholder-image.jpg" alt="Placeholder image">
-        </div>
-    </div>
-        <h3>Some random information</h3>
-    <div class="carousel">
-        <div class="carouselbox">
-            <img class="carouselimg" src="https://archive.org/download/placeholder-image/placeholder-image.jpg" alt="Placeholder image">
-            <p class="carouselsubtext">this is some subtext under an illustration or image</p>
-        </div>
-        <div class="carouselbox">
-            <img class="carouselimg" src="https://archive.org/download/placeholder-image/placeholder-image.jpg" alt="Placeholder image">
-            <p class="carouselsubtext">this is some subtext under an illustration or image</p>
-        </div>
-        <div class="carouselbox">
-            <img class="carouselimg" src="https://archive.org/download/placeholder-image/placeholder-image.jpg" alt="Placeholder image">
-            <p class="carouselsubtext">this is some subtext under an illustration or image</p>
-        </div>
-        <div class="carouselbox">
-            <img class="carouselimg" src="https://archive.org/download/placeholder-image/placeholder-image.jpg" alt="Placeholder image">
-            <p class="carouselsubtext">this is some subtext under an illustration or image</p>
-        </div>
-    </div>
-    <div class="quotes">
-        <p class="quotetext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vitae voluptatibus id incidunt a fugit. Dolore eaque neque, pariatur, modi sapiente voluptatibus architecto, laborum molestiae incidunt expedita nostrum sequi veniam.</p>
-        <p class="authortext">- Thor, God of Thunder</p>
-    </div>
-    <div class="calltoaction">
-        <div class="calltoactionbox">
-            <div class="calltoactionleft">
-                <p class="calltext">Call to action! It's time!</p>
-                <p class="callsubtext">Sign up for our product by clicking that button right over there!</p>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="navbar__container">
+                <a href="/" id="navbar-logo">The Harmless Hedonist</a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/services.html" class="navbar__links">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/pricing.html" class="navbar__links">Pricing</a>
+                    </li>
+                    <li class="navbar__btn mobile">
+                        <a href="/signup.html" class="button">Sign Up</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__btn desktop">
+                    <a href="/signup.html" class="button">Sign Up</a>
+                </div>
+
+                <button class="navbar__toggle"
+                id="mobile-menu" aria-label="Toggle Navigation"
+                aria-expanded=""
+                false>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
             </div>
-            <div class="calltoactionright">
-                <button class="callbutton">Sign up</button>
+        </nav>
+    </header>>
+    <!-- Hero Section -->
+     <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1>Vegan foods</h1>
+                    <p>Try them today</p>
+                    <button class="hero__btn">Sign Up</button>
+                </div>
+                <div class="hero__image">
+                    <img id = "hero-img" 
+                    src="/html-css-js-test/images/undraw_cooking_j2pu.svg" 
+                    alt="Illustration of food">
+                </div>
+            </div>
+        </section>
+
+<!-- Rotating Logos Section -->
+        <div class="rotating-logos">
+            <div class="rotating-logos__track">
+                <span class="logo-text">The Harmless Hedonist</span>
+                <span class="logo-text">The Harmless Hedonist 2</span>
+                <span class="logo-text">The Harmless Hedonist 3</span>
+                <span class="logo-text">The Harmless Hedonist 4</span>
+                <span class="logo-text">The Harmless Hedonist 5</span>
+                <span class="logo-text">The Harmless Hedonist 6</span>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <p>Copyright (c) Harmless Hedonist 2025</p>
-    </div>
-    
+
+        <!-- Why Choose Us Section -->
+         <section class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <p class="intro-text">
+                    Discover how the health benefits of vegan foods can help you live a healthier lifestyle.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <h3>Secure & Reliable</h3>
+                        <p>We prioritize your security.</p>
+                    </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-chart-simple icon"></i>
+                        <h3>Research Driven Insights</h3>
+                        <p>Our research helps show how vegan eating can help you stay healthy.</p>
+                    </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-user icon"></i>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Our interfaces makes your shoping experience simple.</p>
+                    </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <h3>Secure & Reliable</h3>
+                        <p>We prioritize your security.</p>
+                    </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <h3>Secure & Reliable</h3>
+                        <p>We prioritize your security.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+<!-- Pricing Section -->
+         <section class="services">
+            <h2>Choose the right meal for you</h2>
+            <!-- Pricing Toggle Button -->
+             <div class="pricing-toggle">
+                <div class="toggle-container">
+                    <span class="toggle-option">Monthly</span>
+                    <label "" class="switch">
+                        <input 
+                        type="checkbox" 
+                        id="pricing-toggle-checkbox" 
+                        onclick="switchPricing()"
+                        />
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-option">Yearly</span>
+                </div>
+                <div class="save-percentage-container">
+                    <span class="save-percentage">Save 20%</span>
+                </div>
+             </div>
+
+             <div class="services__container">
+                <!-- Basic Plan -->
+                 <div class="services__card">
+                    <div class="card-content">
+                        <h3>Basic Plan</h3>
+                        <div class="card-price">
+                            <p class="price monthly-price">$10/mo</p>
+                            <p class="price yearly-price hidden">$8/mo</p>
+                            <a href="/signup.html" class="price-btn">Get Started</a>
+                            <p id="small-desc">Everything you need to get started</p>
+                        </div>
+
+                        <div class="card-features">
+                            <p>Features:</p>
+                            <ul>
+                                <li>Digital Checking Account</li>
+                                <li>Access to basic features</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+                 
+                 <div class="services__card">
+                    <div class="card-content">
+                        <h3>Standard Plan</h3>
+                        <div class="card-price">
+                            <p class="price monthly-price">$30/mo</p>
+                            <p class="price yearly-price hidden">$24/mo</p>
+                            <a href="/signup.html" class="price-btn">Get Started</a>
+                            <p id="small-desc">Perfect for individuals</p>
+                        </div>
+
+                        <div class="card-features">
+                            <p>Features:</p>
+                            <ul>
+                                <li>Automatic Tracking</li>
+                                <li>Customizable Budgets</li>
+                                <li>Automatic Tracking</li>
+                                <li>Customizable Budgets</li>
+                                <li>Automatic Tracking</li>
+                                <li>Customizable Budgets</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="services__card">
+                    <div class="card-content">
+                        <h3>Premium Plan</h3>
+                        <div class="card-price">
+                            <p class="price monthly-price">$50/mo</p>
+                            <p class="price yearly-price hidden">$40/mo</p>
+                            <a href="/signup.html" class="price-btn">Get Started</a>
+                            <p id="small-desc">Ideal for investors and advanced users</p>
+                        </div>
+
+                        <div class="card-features">
+                            <p>Features:</p>
+                            <ul>
+                                <li>Digital Checking Account</li>
+                                <li>Access to basic features</li>
+                                <li>Digital Checking Account</li>
+                                <li>Access to basic features</li>
+                                <li>Digital Checking Account</li>
+                                <li>Access to basic features</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+                 
+             </div>
+         </section>
+
+<!-- Footer Section -->
+         <footer>
+            <div class="footer__container">
+                <div class="footer__links">
+                    <div class="footer__links-wrapper">
+                        <div class="footer__link-items">
+                            <h2>About Us</h2>
+                            <a href="/how-it-works.html">How it works</a>
+                            <a href="/testimonials.html">Testimonials</a>
+                            <a href="/careers.html">Careers</a>
+                            <a href="/investments.html">Investments</a>
+                            <a href="/terms-of-service.html">Terms of Service</a>
+                        </div>
+
+                        <div class="footer__link-items">
+                            <h2>Contact Us</h2>
+                            <a href="/contact.html">Contact</a>
+                            <a href="/support.html">Support</a>
+                        </div>
+                        </div>
+
+                        <div class="footer__link-wrapper">
+
+                        <div class="footer__link-items">
+                            <h2>Social Media</h2>
+
+                            <a href="https://www.instagram.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            >Instagram</a>
+
+                            <a href="https://www.facebook.com"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            >Facebook</a>
+
+                            <a href="https://www.youtube.com"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            >Youtube</a>
+
+                            <a href="https://www.twitter.com"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            >Twitter</a>
+
+                        </div>
+                    </div>
+                </div>
+                <section class="social__media">
+                    <div class="social__media-wrap">
+                        <div class="footer__logo">
+                            <a href="/" id="footer-logo">The Harmless Hedonist</a>
+                        </div>
+                        <p class="website__rights">
+                            © The Harmless Hedonist <span class="year"></span> All rights reserved
+                        </p>
+                        <div class="social__icons">
+                            
+                        <a 
+                            href="https://www.facebook.com" 
+                            class="social__icon-link"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Facebook"
+                            >
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.instagram.com" 
+                            class="social__icon-link"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Facebook"
+                            >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.youtube.com" 
+                            class="social__icon-link"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Facebook"
+                            >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.twitter.com" 
+                            class="social__icon-link"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Facebook"
+                            >
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+         </footer>
+
+     </main>
+    <script src="app.js"></script>
 </body>
 </html>
