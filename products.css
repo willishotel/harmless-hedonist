@@ -1,4 +1,5 @@
 
+/* Page Setup */
 html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100%;
@@ -123,9 +124,6 @@ main {
         }
 
         /*footer styling*/
-        .main-content {
-            flex: 1; /* Pushes the footer down */
-        }
         .footer {
             display: flex;
             justify-content: center;
