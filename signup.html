@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create an Account</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-  <h1>NEW HERE?</h1>
+  <div class="signup-container">
+    <h1>NEW HERE?</h1>
   <p>Create an account</p>
   <form id="signupForm">
     <label for="firstName">First Name:</label>
@@ -27,6 +28,7 @@
 
     <button type="submit">REGISTER</button>
   </form>
+</div>
 
   <script>
     document.getElementById('signupForm').addEventListener('submit', function(e) {
