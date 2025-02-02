@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="header">
+    <!-- <nav class="header">
         <h1><img class="headerlogo" src="https://i.imgur.com/Unl2uyw.png" alt="Harmless Hedonist header logo"></h1>
         <ul class="headerlinks">
             <li>Products</li>
@@ -15,7 +15,18 @@
             <li>FAQ</li>
             <li>Login</li>
         </ul>
-    </nav>
+    </nav> -->
+    <header>
+        <div id="header"></div>
+    
+        <script>
+            fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("header").innerHTML = data;
+            });
+        </script>
+    </header>
     <div class="content">
         <div class="contentleft">
         <h2>New Year, New You</h2>
@@ -60,9 +71,19 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        </script>
+    </footer>
+    <!-- <div class="footer">
         <p>Copyright (c) Harmless Hedonist 2025</p>
-    </div>
+    </div> -->
     
 </body>
 </html>
