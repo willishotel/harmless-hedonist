@@ -24,7 +24,27 @@
             .then(response => response.text())
             .then(data => {
             document.getElementById("header").innerHTML = data;
+            updateAuthButton(); // Ensure login/logout button updates after header loads
             });
+            
+            function updateAuthButton() {
+                const authButton = document.getElementById('authButton');
+                const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+                if (authButton) {
+                    if (isLoggedIn) {
+                        authButton.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
+                    } else {
+                        authButton.innerHTML = '<a href="login.html">Login</a>';
+                    }
+                }
+            }
+
+            function logout() {
+                localStorage.removeItem('isLoggedIn');
+                alert('Logged out successfully');
+                window.location.reload();
+            }
         </script>
     </header>
     <div class="content">
