@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0; 
 }
 
 .signup-container {
@@ -20,6 +21,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; 
+    min-height: 400px; 
 }
 
 h1 {
@@ -37,19 +40,19 @@ p {
 form {
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
     align-items: center;
 }
 
 label {
     font-size: 16px;
     text-align: left;
-    width: 90%; 
+    width: 90%;
     margin-bottom: 5px;
 }
 
 input {
-    width: 90%; 
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -70,4 +73,38 @@ button {
 
 button:hover {
     background-color: #3068c5;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .signup-container {
+        width: 90%;
+        max-width: 400px; 
+        padding: 20px;
+        min-height: 350px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    label, p {
+        font-size: 14px;
+    }
 }
