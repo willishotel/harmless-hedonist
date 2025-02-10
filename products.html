@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/products.css" />
 </head>
 
+
 <body>
     <!-- Header Section -->
+
+<!-- 
     <header>
         <nav class="header">
             <h1>Header Logo</h1>
@@ -20,6 +23,20 @@
             </ul>
         </nav>
     </header>
+-->
+
+<header>
+    <div id="header"></div>
+
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;
+        });
+    </script>
+</header>
+
 
     <!-- Product Container -->
     <main>
@@ -60,12 +77,50 @@
         </div>
     </main>
 
+    <!-- Commented Section: Dynamically Adding Products -->
+    <!-- 
+        To dynamically add products from a database, include this in a separate JavaScript file:
+        
+        const products = [
+        { id: 1, name: 'Product 4', price: '$25.00', img: 'product4.jpg' },
+        { id: 2, name: 'Product 5', price: '$30.00', img: 'product5.jpg' },
+        ];
+
+        const container = document.querySelector('.product-container');
+
+        products.forEach(product => {
+        const card = document.createElement('div');
+        card.classList.add('product-card');
+        card.innerHTML = `
+            <img src="${product.img}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>${product.price}</p>
+            <button>Add to Cart</button>
+        `;
+        container.appendChild(card);
+        });
+    -->
+
 <!-- Footer Section -->
+ <!-- 
     <footer>
         <div class="footer">
             <p>Copyright (c) Harmless Hedonist 2025</p>
         </div>
     </footer>
+    -->
+   
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        </script>
+    </footer>
+    
 
 </body>
 </html>

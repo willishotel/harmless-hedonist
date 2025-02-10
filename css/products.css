@@ -124,6 +124,7 @@ main {
         }
 
         /*footer styling*/
+        
         .footer {
             display: flex;
             justify-content: center;
@@ -133,3 +134,4 @@ main {
             padding: 20px;
             font-size: 12px;
         }
+            
