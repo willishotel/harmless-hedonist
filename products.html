@@ -5,26 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Harmless Hedonist</title>
-    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="products.css" />
 </head>
 
 
 <body>
     <!-- Header Section -->
-
-<!-- 
-    <header>
-        <nav class="header">
-            <h1>Header Logo</h1>
-            <ul class="headerlinks">
-                <li>header link one</li>
-                <li>header link two</li>
-                <li>header link three</li>
-            </ul>
-        </nav>
-    </header>
--->
-
 <header>
     <div id="header"></div>
 
@@ -40,42 +26,32 @@
 
     <!-- Product Container -->
     <main>
-        <div class="product-container">
-            <div class="product-card">
-            <a href="product-details1.html" class="product-link">
-                <img src="product1.jpg" alt="Vegan Burger">
-                <h3>Vegan Burger</h3>
-                <p>$10.00</p>
-                <p class="product-description">
-                A delicious plant-based burger made with a blend of black beans, quinoa, and spices.
-                </p>
-                <button type="button">Add to Cart</button>
-            </a>
-            </div>
-            <div class="product-card">
-            <a href="product-details2.html" class="product-link">
-                <img src="product2.jpg" alt="Vegan Pasta">
-                <h3>Vegan Pasta</h3>
-                <p>$15.00</p>
-                <p class="product-description">
-                Creamy cashew-based Alfredo sauce over gluten-free pasta, topped with fresh herbs.
-                </p>
-                <button type="button">Add to Cart</button>
-            </a>
-            </div>
-            <div class="product-card">
-            <a href="product-details3.html" class="product-link">
-                <img src="product3.jpg" alt="Vegan Smoothie Bowl">
-                <h3>Vegan Smoothie Bowl</h3>
-                <p>$12.00</p>
-                <p class="product-description">
-                A refreshing smoothie bowl made with frozen berries, banana, and almond milk.
-                </p>
-                <button type="button">Add to Cart</button>
-            </a>
-            </div>
+        <h1>Our Products</h1>
+        <div class="product-container" id="product-container">
+            <!-- Products will be dynamically inserted here -->
         </div>
     </main>
+    
+    <script src="products.js"></script>
+
+
+
+<!-- Footer Section -->
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        </script>
+    </footer>
+    
+
+</body>
+</html>
+
 
     <!-- Commented Section: Dynamically Adding Products -->
     <!-- 
@@ -100,27 +76,3 @@
         container.appendChild(card);
         });
     -->
-
-<!-- Footer Section -->
- <!-- 
-    <footer>
-        <div class="footer">
-            <p>Copyright (c) Harmless Hedonist 2025</p>
-        </div>
-    </footer>
-    -->
-   
-    <footer>
-        <div id="footer"></div>
-        <script>
-            fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-        </script>
-    </footer>
-    
-
-</body>
-</html>
