@@ -6,12 +6,15 @@
     padding: 10px 200px;
 }
 
-.headerlinks {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    gap: 10px;
-    align-items: center;
-    margin-left: auto;
+.headerlinks a,
+.headerlinks a:link,
+.headerlinks a:visited,
+.headerlinks a:active,
+.headerlinks a:focus {
+    text-decoration: none;
     color: #E5E7EB;
+}
+
+.headerlinks a:hover {
+    text-decoration: solid;
 }
