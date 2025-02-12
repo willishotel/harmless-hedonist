@@ -56,13 +56,14 @@ body {
 
 /* FAQ Answers */
 .faq-answer {
-    display: none; /* Ready for future collapsibility */
+    display: none; /* Initially hidden for interactivity */
     font-size: 16px;
-    color: #1F2937;
+    color: #F9FAF8;
     padding-left: 15px;
     border-left: 3px solid #3882F6;
 }
 
+/* Footer */
 .footer {
     display: flex;
     justify-content: center;
@@ -86,4 +87,38 @@ h3 {
     color: #1F2937;
     font-weight: 900;
     text-align: center;
+}
+
+/* Mobile Navigation Improvements */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headerlinks {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .headerlinks li {
+        padding: 5px 0;
+    }
+}
+
+/* Mobile Optimization for FAQ */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 30px;
+    }
+}
+
+/* Footer Mobile Optimization */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+        padding: 15px;
+    }
 }
