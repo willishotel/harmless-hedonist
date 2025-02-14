@@ -65,8 +65,8 @@ body {
 }
 
 .contentimg {
-    height: 200px;
-    width: 450px;
+    height: auto;
+    width: 100%;
 }
 
 .carousel {
