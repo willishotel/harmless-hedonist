@@ -10,37 +10,14 @@
 
 <body>
 
-    <header>
-        <div id="header"></div>
-    
-        <script>
-            fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById("header").innerHTML = data;
-            updateAuthButton(); // Ensure login/logout button updates after header loads
-            });
-            
-            function updateAuthButton() {
-                const authButton = document.getElementById('authButton');
-                const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-
-                if (authButton) {
-                    if (isLoggedIn) {
-                        authButton.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
-                    } else {
-                        authButton.innerHTML = '<a href="login.html">Login</a>';
-                    }
-                }
-            }
-
-            function logout() {
-                localStorage.removeItem('isLoggedIn');
-                alert('Logged out successfully');
-                window.location.reload();
-            }
-        </script>
-    </header>
+    <nav class="header">
+        <img src="https://i.imgur.com/Unl2uyw.png" alt="Harmless Hedonist Logo" class="headerlogo">
+        <ul class="headerlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
 
     <div class="blogheader">
         <h2>Vegan isn't just a diet; it's a lifestyle</h2>
@@ -56,14 +33,14 @@
             <p>A vegan diet is based on plants (such as vegetables, grains, nuts and fruits) and foods made from plants.
                 Vegans do not eat foods that come from animals, including dairy products and eggs. 
                 You can get the nutrients you need from eating a varied and balanced vegan diet including fortified foods and...</p>
-            <a class="read" href="https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/the-vegan-diet/" target="_blank">Read More</a>
+            <a class="read" href="https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/the-vegan-diet/" target="_blank" rel="noopener noreferrer">Read More</a>
         </article>
         <article class="featuredpost">
             <img src="https://i.imgur.com/v8FI8Rh.jpg" alt="Harvard Vegan Image">
             <h4>With a little planning, vegan diets can be a healthful choice</h4>
             <p>A position paper from Academy of Nutrition and Dietetics noted that appropriately planned vegetarian (including vegan) diets are healthful, 
                 nutritionally adequate, and may provide health benefits for the prevention and treatment of certain diseases.</p>
-            <a class="read" href="https://www.health.harvard.edu/blog/with-a-little-planning-vegan-diets-can-be-a-healthful-choice-2020020618766" target="_blank">Read More</a>
+            <a class="read" href="https://www.health.harvard.edu/blog/with-a-little-planning-vegan-diets-can-be-a-healthful-choice-2020020618766" target="_blank" rel="noopener noreferrer">Read More</a>
         </article>
     </div>
 
@@ -71,22 +48,25 @@
 
     <div class="blogcontent">
         <article class="blogpost">
-            <h3 class="blogtitle">Blog Title</h3>
-            <p class="blogauthor">By Name #1</p>
-            <p class="blogexcerpt">Discover how going vegan can improve your health #1. Click to read more!</p>
-            <a class="read" href="testpage.html">Read More</a>
+            <h3 class="blogtitle">Nutrition Tips for Vegans</h3>
+            <p class="blogauthor">By: Jack Norris</p>
+            <p class="blogexcerpt">Protein and iron are commonly thought to be difficult to obtain on a 
+                                    vegan diet but they’re actually easily obtained for most people.</p>
+            <a class="read" href="https://veganhealth.org/tips-for-new-vegans/" target="_blank" rel="noopener noreferrer">Read More</a>
         </article>
         <article class="blogpost">
-            <h3 class="blogtitle">Blog Title</h3>
-            <p class="blogauthor">By Name #2</p>
-            <p class="blogexcerpt">Discover how going vegan can improve your health #2. Click to read more!</p>
-            <a class="read" href="testpage.html">Read More</a>
+            <h3 class="blogtitle">Vegan Black Bean & Quinoa Burger</h3>
+            <p class="blogauthor">By Harmless Hedonist</p>
+            <p class="blogexcerpt">Are you craving a flavorful and nutritious burger that’s 100% plant-based? 
+                                    Look no further than our Black Bean & Quinoa Burger!</p>
+            <a class="read" href="internalblog.html" target="_blank">Read More</a>
         </article>
         <article class="blogpost">
-            <h3 class="blogtitle">Blog Title</h3>
-            <p class="blogauthor">By Name #3</p>
-            <p class="blogexcerpt">Discover how going vegan can improve your health #3. Click to read more!</p>
-            <a class="read" href="testpage.html">Read More</a>
+            <h3 class="blogtitle">30-Minute Cashew Alfredo</h3>
+            <p class="blogauthor">By: Minimalist Baker</p>
+            <p class="blogexcerpt">Creamy, saucy cashew alfredo in 30 minutes! The perfect plant-based sauce 
+                                    for all your pasta night needs. Click to read more!</p>
+            <a class="read" href="https://minimalistbaker.com/30-minute-cashew-alfredo/" target="_blank" rel="noopener noreferrer">Read More</a>
         </article>
     </div>
 
@@ -95,5 +75,4 @@
     </div>
 
 </body>
-
 </html>
