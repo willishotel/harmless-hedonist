@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Black Bean Burger</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="header"></div>
+    
+        <script>
+            fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("header").innerHTML = data;
+            updateAuthButton(); // Ensure login/logout button updates after header loads
+            });
+            
+            function updateAuthButton() {
+                const authButton = document.getElementById('authButton');
+                const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+                if (authButton) {
+                    if (isLoggedIn) {
+                        authButton.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
+                    } else {
+                        authButton.innerHTML = '<a href="login.html">Login</a>';
+                    }
+                }
+            }
+
+            function logout() {
+                localStorage.removeItem('isLoggedIn');
+                alert('Logged out successfully');
+                window.location.reload();
+            }
+        </script>
+        
+    </header>
+
+    <div class="container">
+
+    <section>
+
+        <h1>Vegan Black Bean & Quinoa Burger</h1>
+        <h2>Why You’ll Love This Burger</h2>
+        <ul>
+            <li><strong>Nutrient-Dense</strong>: Made with black beans, quinoa, and a mix of flavorful spices, this burger is full of nutrition.</li>
+            <li><strong>High in Protein & Fiber</strong>: Both black beans and quinoa provide plant-based protein and fiber, keeping you full and satisfied.</li>
+            <li><strong>Perfect Texture</strong>: Crispy on the outside, tender on the inside—this burger holds up beautifully on a bun.</li>
+            <li><strong>Customizable</strong>: Dress it up with your favorite toppings, from avocado and caramelized onions to vegan cheese and sriracha mayo.</li>
+        </ul>
+    </section>
+    <img src="https://i.imgur.com/7BOYbko.jpeg" alt="Burger Image" class="burgerimage">
+    <section>
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 can (15 oz) black beans, drained and rinsed</li>
+            <li>&frac12 cup cooked quinoa</li>
+            <li>&frac12 cup breadcrumbs (or oat flour for gluten-free option)</li>
+            <li>&frac14 cup finely chopped onion</li>
+            <li>1 clove garlic, minced</li>
+            <li>1 tbsp ground flaxseed mixed with 3 tbsp water (egg replacer)</li>
+            <li>1 tsp smoked paprika</li>
+            <li>1 tsp cumin</li>
+            <li>&frac12 tsp chili powder</li>
+            <li>&frac12 tsp salt</li>
+            <li>&frac14 tsp black pepper</li>
+            <li>1 tbsp olive oil (for cooking)</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Instructions</h2>
+        <ol>
+            <li><strong>Mash the Black Beans</strong>: In a large bowl, mash black beans with a fork or potato masher until mostly smooth but with some texture remaining.</li>
+            <li><strong>Mix Ingredients</strong>: Add cooked quinoa, breadcrumbs, chopped onion, garlic, flaxseed mixture, and all seasonings. Mix well until combined.</li>
+            <li><strong>Form Patties</strong>: Shape the mixture into 4 equal-sized patties.</li>
+            <li><strong>Cook</strong>: Heat olive oil in a pan over medium heat. Cook each patty for about 4-5 minutes per side, or until golden brown and crispy.</li>
+            <li><strong>Assemble & Serve</strong>: Place the burger on a toasted bun or lettuce wrap, then top with your favorite condiments and toppings.</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h2>Serving Suggestions</h2>
+        <ul>
+            <li><strong>Classic Style</strong>: Serve on a toasted bun with lettuce, tomato, red onion, and vegan mayo.</li>
+            <li><strong>Southwest Twist</strong>: Add avocado, salsa, and a drizzle of chipotle sauce.</li>
+            <li><strong>BBQ Lovers</strong>: Top with grilled onions, BBQ sauce, and pickles for a smoky, tangy bite.</li>
+        </ul>
+    </section>
+
+    </div>
+    
+    <div class="footer">
+        <p>Copyright (c) Harmless Hedonist 2025</p>
+    </div>
+
+</body>
+
+</html>
