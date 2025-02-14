@@ -91,11 +91,11 @@ body {
 
 .quotes {
     background-color: #E5E7EB;
-    padding: 100px 200px;
+    padding: 20px 200px;
 }
 
 .quotetext {
-    font-size: 36px;
+    font-size: 20px;
     color: #1F2937;
     font-weight: 100;
     font-style: italic;
@@ -103,7 +103,7 @@ body {
 
 .authortext {
     text-align: right;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
