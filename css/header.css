@@ -3,7 +3,7 @@
     display: flex;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 10px 200px;
+    padding: 0px 200px;
 }
 
 .headerlinks a,
@@ -17,4 +17,9 @@
 
 .headerlinks a:hover {
     text-decoration: solid;
+}
+
+.headerlogo {
+    height: 50px;
+    width: 100%;
 }
