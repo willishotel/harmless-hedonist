@@ -23,7 +23,7 @@ body {
     display: flex;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 50px 200px 100px;
+    padding: 50px 400px 50px;
 }
 
 .contentleft {
@@ -65,14 +65,14 @@ body {
 }
 
 .contentimg {
-    height: 200px;
-    width: 450px;
+    height: auto;
+    width: 100%;
 }
 
 .carousel {
     display: flex;
     justify-content: center;
-    padding: 0px 200px;
+    padding: 0px 400px;
 }
 
 .carouselbox {
@@ -89,13 +89,19 @@ body {
     border-radius: 10px;
 }
 
+.viewmenubutton {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 .quotes {
     background-color: #E5E7EB;
-    padding: 100px 200px;
+    padding: 20px 400px;
 }
 
 .quotetext {
-    font-size: 36px;
+    font-size: 20px;
     color: #1F2937;
     font-weight: 100;
     font-style: italic;
@@ -103,7 +109,7 @@ body {
 
 .authortext {
     text-align: right;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -112,7 +118,7 @@ body {
     justify-content: center;
     background-color: #3882F6;
     border-radius: 10px;
-    margin: 50px 200px;
+    margin: 50px 350px;
     padding: 25px 50px;
     gap: 100px;
 }
@@ -169,64 +175,8 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 30px;
     color: #1F2937;
     font-weight: 900;
     text-align: center;
-}
-
-.carousel-container {
-    position: relative;
-    width: 80%; /* Adjust based on preference */
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* Ensures the carousel fills the container */
-}
-
-.carouselbox {
-    flex: 1 1 25%;
-    text-align: center;
-}
-
-.carouselimg {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.carousel-prev,
-.carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 50%;
-    z-index: 10;
-}
-
-.carousel-prev {
-    left: -40px; /* Move it fully outside the carousel */
-}
-
-.carousel-next {
-    right: -40px; /* Move it fully outside the carousel */
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
