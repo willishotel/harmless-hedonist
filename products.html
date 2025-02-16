@@ -28,12 +28,10 @@
     <main>
         <h1>Our Products</h1>
         <div class="product-container" id="product-container">
-            <!-- Products will be dynamically inserted here -->
         </div>
     </main>
     
     <script src="products.js"></script>
-
 
 
 <!-- Footer Section -->
@@ -48,31 +46,5 @@
         </script>
     </footer>
     
-
 </body>
 </html>
-
-
-    <!-- Commented Section: Dynamically Adding Products -->
-    <!-- 
-        To dynamically add products from a database, include this in a separate JavaScript file:
-        
-        const products = [
-        { id: 1, name: 'Product 4', price: '$25.00', img: 'product4.jpg' },
-        { id: 2, name: 'Product 5', price: '$30.00', img: 'product5.jpg' },
-        ];
-
-        const container = document.querySelector('.product-container');
-
-        products.forEach(product => {
-        const card = document.createElement('div');
-        card.classList.add('product-card');
-        card.innerHTML = `
-            <img src="${product.img}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.price}</p>
-            <button>Add to Cart</button>
-        `;
-        container.appendChild(card);
-        });
-    -->
