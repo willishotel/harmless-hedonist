@@ -29,114 +29,16 @@
     },
     {
         "id": 5,
-        "name": "Vegan Sushi Roll",
-        "price": "$14.50",
-        "img": "product5.jpg",
-        "description": "Avocado, cucumber, and marinated tofu wrapped in seaweed and sushi rice."
-    },
-    {
-        "id": 6,
-        "name": "Spicy Chickpea Wrap",
-        "price": "$11.00",
-        "img": "product6.jpg",
-        "description": "A high-protein wrap filled with spicy roasted chickpeas, avocado, and fresh greens."
-    },
-    {
-        "id": 7,
-        "name": "Vegan Mac & Cheese",
-        "price": "$14.00",
-        "img": "product7.jpg",
-        "description": "Cashew-based creamy cheese sauce over gluten-free elbow pasta."
-    },
-    {
-        "id": 8,
-        "name": "Tofu Stir-Fry",
-        "price": "$13.50",
-        "img": "product8.jpg",
-        "description": "Sautéed tofu with bell peppers, broccoli, and sesame-ginger sauce over brown rice."
-    },
-    {
-        "id": 9,
-        "name": "Mushroom Risotto",
-        "price": "$16.00",
-        "img": "product9.jpg",
-        "description": "Creamy risotto made with arborio rice, wild mushrooms, and cashew cream."
-    },
-    {
-        "id": 10,
-        "name": "Vegan Caesar Salad",
-        "price": "$10.00",
-        "img": "product10.jpg",
-        "description": "Crispy romaine, chickpea croutons, and dairy-free Caesar dressing."
-    },
-    {
-        "id": 11,
-        "name": "Vegan Pad Thai",
-        "price": "$14.00",
-        "img": "product11.jpg",
-        "description": "Rice noodles tossed in a peanut sauce with tofu, bean sprouts, and crushed peanuts."
-    },
-    {
-        "id": 12,
-        "name": "Stuffed Bell Peppers",
-        "price": "$13.00",
-        "img": "product12.jpg",
-        "description": "Quinoa, black beans, corn, and avocado stuffed into roasted bell peppers."
-    },
-    {
-        "id": 13,
-        "name": "Vegan Chocolate Cake",
-        "price": "$7.50",
-        "img": "product13.jpg",
-        "description": "Rich chocolate cake made with almond flour and coconut sugar, topped with dairy-free ganache."
-    },
-    {
-        "id": 14,
-        "name": "Chia Pudding",
-        "price": "$6.00",
-        "img": "product14.jpg",
-        "description": "Chia seeds soaked in almond milk with vanilla and maple syrup, topped with fresh berries."
-    },
-    {
-        "id": 15,
-        "name": "Coconut Yogurt Parfait",
-        "price": "$8.00",
-        "img": "product15.jpg",
-        "description": "Layers of coconut yogurt, granola, and tropical fruits."
-    },
-    {
-        "id": 16,
         "name": "Vegan Chili",
         "price": "$12.00",
-        "img": "product16.jpg",
+        "img": "product5.jpg",
         "description": "A hearty and spicy chili made with kidney beans, black beans, tomatoes, smoky spices, and seasoned vegan ground beef."
     },
     {
-        "id": 17,
-        "name": "Matcha Green Tea Smoothie",
-        "price": "$6.50",
-        "img": "product17.jpg",
-        "description": "A refreshing smoothie made with matcha, banana, almond milk, and a hint of vanilla."
-    },
-    {
-        "id": 18,
-        "name": "Vegan Protein Bar",
-        "price": "$3.50",
-        "img": "product18.jpg",
-        "description": "A homemade protein bar packed with oats, peanut butter, and plant-based protein."
-    },
-    {
-        "id": 19,
-        "name": "Dairy-Free Ice Cream",
-        "price": "$7.00",
-        "img": "product19.jpg",
-        "description": "Creamy cashew-based ice cream available in chocolate, vanilla, and strawberry."
-    },
-    {
-        "id": 20,
+        "id": 6,
         "name": "Vegan Lasagna",
         "price": "$16.00",
-        "img": "product20.jpg",
+        "img": "product6.jpg",
         "description": "Layered pasta with cashew ricotta, marinara sauce, and seasoned vegan ground beef."
     }
 ]
