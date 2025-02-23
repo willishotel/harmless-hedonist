@@ -2,22 +2,23 @@ fetch("products.json")
     .then(response => response.json())
     .then(products => {
         const container = document.querySelector(".product-container");
-        container.innerHTML = ""; // Clear static content
+        container.innerHTML = ""; // Clear previous content
 
         products.forEach(product => {
-            let card = document.createElement("div");
-            card.classList.add("product-card");
+            // Format product name into a URL-friendly format
+            const productSlug = product.name.toLowerCase().replace(/\s+/g, "-") + "-details";
 
+            const card = document.createElement("div");
+            card.classList.add("product-card");
             card.innerHTML = `
-                <a href="product-details.html?id=${product.id}" class="product-link">
-                    <img src="${product.img}" alt="${product.name}">
+                <a href="/html-css-js-product-page/${productSlug}.html" class="product-link">
+                    <img src="${product.image}" alt="${product.name}">
                     <h3>${product.name}</h3>
                     <p>${product.price}</p>
                     <p class="product-description">${product.description}</p>
-                    <button type="button" onclick="addToCart(${product.id})">Add to Cart</button>
+                    <button type="button">View Details</button>
                 </a>
             `;
-
             container.appendChild(card);
         });
     })

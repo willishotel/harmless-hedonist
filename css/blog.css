@@ -69,6 +69,7 @@ body {
     display: inline-block;
     padding: 10px 15px;
     background-color: #3882F6;
+    color: #F9FAF8;
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
@@ -171,6 +172,10 @@ section ul, section ol {
     height: auto;
 }
 
+.like {
+    margin-left: 20px; 
+}
+
 /* Tablet Responsive */ 
 @media (max-width: 768px) {
     .header {
@@ -247,4 +252,5 @@ section ul, section ol {
     .header {
         padding: 10px 5%;
     }
+
 }
