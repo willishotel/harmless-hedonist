@@ -7,16 +7,10 @@ body {
 
 .header {
     display: flex;
-    flex-wrap: wrap;  
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 10px 200px;
     align-items: center;
-}
-
-.headerlogo {
-    height: 100px; 
-    margin-right: 10px; 
 }
 
 .headerlinks {
@@ -25,8 +19,6 @@ body {
     padding: 0;
     gap: 10px;
     margin-left: auto;
-    /*flex-wrap: wrap;
-    justify-content: center;*/
 }
 
 .headerlinks a {
@@ -158,8 +150,7 @@ section ul, section ol {
     width: 80%; 
     margin: 0 auto; 
     max-width: 1200px;
-    padding-left: 80px;
-    /*text-align: left;*/    
+    padding-left: 80px;   
 }
 
 .container section {
@@ -168,7 +159,8 @@ section ul, section ol {
 
 .container img {
     display: block;
-    max-width: 100%;
+    max-width: auto;
+    /*max-height: 600px;*/
     height: auto;
 }
 
@@ -178,18 +170,6 @@ section ul, section ol {
 
 /* Tablet Responsive */ 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .headerlinks {
-        flex-direction: column;
-        gap: 10px;
-        padding-top: 10px;
-    }
-
     .container {
         width: 95%;  
         padding-left: 15px;
@@ -217,6 +197,13 @@ section ul, section ol {
 
 /* Mobile Responsive */ 
 @media (max-width: 600px) {
+    header {
+        padding: 10px 15px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+      }
+
     .container {
         width: 100%;
         padding: 10px;
@@ -248,9 +235,4 @@ section ul, section ol {
     .featuredpost, .blogpost {
         width: 100%;
     }
-
-    .header {
-        padding: 10px 5%;
-    }
-
 }
