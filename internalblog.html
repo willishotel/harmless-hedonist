@@ -12,50 +12,33 @@
 
     <header>
         <div id="header"></div>
-    
+        
         <script>
             fetch("header.html")
             .then(response => response.text())
             .then(data => {
             document.getElementById("header").innerHTML = data;
-            updateAuthButton(); // Ensure login/logout button updates after header loads
             });
-            
-            function updateAuthButton() {
-                const authButton = document.getElementById('authButton');
-                const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-
-                if (authButton) {
-                    if (isLoggedIn) {
-                        authButton.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
-                    } else {
-                        authButton.innerHTML = '<a href="login.html">Login</a>';
-                    }
-                }
-            }
-
-            function logout() {
-                localStorage.removeItem('isLoggedIn');
-                alert('Logged out successfully');
-                window.location.reload();
-            }
         </script>
-        
+
     </header>
 
-    <div class="container">
-
-    <section>
-
+    <div class="blogheader">
         <h1>Vegan Black Bean & Quinoa Burger</h1>
         <h2>Why You’ll Love This Burger</h2>
+    </div>
+
+    <div class="container">
+  
+    <section>
         <ul>
             <li><strong>Nutrient-Dense</strong>: Made with black beans, quinoa, and a mix of flavorful spices, this burger is full of nutrition.</li>
             <li><strong>High in Protein & Fiber</strong>: Both black beans and quinoa provide plant-based protein and fiber, keeping you full and satisfied.</li>
             <li><strong>Perfect Texture</strong>: Crispy on the outside, tender on the inside—this burger holds up beautifully on a bun.</li>
             <li><strong>Customizable</strong>: Dress it up with your favorite toppings, from avocado and caramelized onions to vegan cheese and sriracha mayo.</li>
-        </ul>
+        </ul>  
     </section>
+  
     <img src="https://i.imgur.com/7BOYbko.jpeg" alt="Burger Image" class="burgerimage">
     <section>
         <h2>Ingredients</h2>
@@ -102,5 +85,4 @@
     </div>
 
 </body>
-
 </html>
